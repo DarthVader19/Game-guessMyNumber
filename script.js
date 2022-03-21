@@ -1,7 +1,5 @@
 let randomNumber=Math.trunc(Math.random()*20);4
-// let x=Math.trunc(Math.random()*30+5),
-//   y=Math.trunc(Math.random()*5+5)
-// //let randomNumber=String(x)+String(y);
+
 console.log(randomNumber);
 
 let score=20;
@@ -11,8 +9,7 @@ const elementSelector=function(elementid,data){
 
     document.querySelector(`${elementid}`).textContent=data;
 };
-//document.querySelector('.number').textContent=randomNumber;
-//display message
+
 const displayMessage=function(message){
     document.querySelector('.message').textContent=message;
 };
@@ -65,13 +62,13 @@ document.querySelector('.check').addEventListener('click',function(){
 }
 );
 
-//console.log(randomNumber);
+
 
 document.querySelector('.again').addEventListener('click',function(){
 
     randomNumber=Math.trunc(Math.random()*20);
     document.querySelector('body').style.backgroundColor='#222';
-   // document.querySelector('.number').textContent='?';
+
    elementSelector('.number','?');
    
 });
