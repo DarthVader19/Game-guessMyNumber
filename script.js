@@ -1,6 +1,6 @@
 let randomNumber=Math.trunc(Math.random()*20);4
 
-console.log(randomNumber);
+// console.log(randomNumber);
 
 let score=20;
 let highscore=0;
@@ -50,7 +50,7 @@ const checkGuess=function(guess){
 //check button pressed
 document.querySelector('.check').addEventListener('click',function(){
     const guess=Number(document.querySelector('.guess').value);
-    console.log(guess);
+    // console.log(guess);
     if(score>1)
    checkGuess(guess);
    else
